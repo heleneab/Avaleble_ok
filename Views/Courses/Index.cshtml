@@ -1,0 +1,22 @@
+﻿@model System.Collections.Generic.List<test_4.Models.Courses>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Fag</h2>
+
+<ul>
+
+  @foreach (var courses in Model)
+  {
+    <li>@courses.FirstName</li>
+    <li>@courses.Fag</li>
+                   
+  }
+
+  
+</ul>
+
+<p><a asp-controller="Courses" asp-action="Add">Legg til fag du ønsker å undervise i</a></p>

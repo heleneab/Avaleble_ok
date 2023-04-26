@@ -12,5 +12,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
     }
     public DbSet<Avaleble> Avalebles=> Set<Avaleble>();
+    public DbSet<Courses> Courses1 => Set<Courses>();
 
 }
